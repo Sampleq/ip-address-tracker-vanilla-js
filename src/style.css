@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Rubik";
+    font-weight: 400;
+    src: url('./fonts/Rubik-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 500;
+    src: url('./fonts/Rubik-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-weight: 700;
+    src: url('./fonts/Rubik-Bold.ttf');
+}
+
+html {
+    font-size: 10px;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.finder {
+    /* height: 20rem; */
+    background: url('../images/pattern-bg.png') no-repeat;
+    background-size: cover;
+
+    padding-top: 6rem;
+    padding-bottom: 25rem;
+
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+.search-bar {
+    display: flex;
+    width: 90%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.search-bar__input {
+    border: none;
+    flex-grow: 1;
+    padding: 1.5rem;
+    padding-left: 3rem;
+    font-size: 2rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+.search-bar__input:focus {
+    outline: none;
+}
+
+.search-bar__btn {
+    border: none;
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 5rem;
+    cursor: pointer;
+    background: url('../images/icon-arrow.svg') no-repeat 50% 50%;
+    background-color: black;
+}
+
+.search-bar__btn:hover {
+    background-color: gray;
+}
+
+
+/* INFO */
+
+.info {
+    background-color: white;
+    border-radius: 3rem;
+
+    width: 90%;
+    max-width: 80rem;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+
+    padding: 3rem 1rem;
+
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 500;
+}
+
+@media (min-width:1280px) {
+    .finder {
+        padding-bottom: 17rem;
+    }
+
+    .info {
+        flex-direction: row;
+        max-width: 120rem;
+    }
+
+    .info__block {
+        flex-basis: 25%;
+        text-align: left !important;
+        padding-left: 3rem;
+        border-left: 0.1rem solid gray;
+    }
+}
+
+.info__block {
+    /* width: 100%; */
+    text-align: center;
+}
+
+.info__block:first-child {
+    border-left: none;
+}
+
+
+.info__block_subtitle {
+    font-size: 2rem;
+    color: gray;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.info__block_title {
+    font-size: 3rem;
+}
+
+
+.map {
+    min-height: 80vh;
+}

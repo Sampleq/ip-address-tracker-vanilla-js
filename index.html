@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <!-- OK -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet"> -->
+
+    <!-- OK -->
+    <!-- <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap');
+  </style> -->
+
+    <link rel="stylesheet" href="./src/style.css" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style> -->
+
+    <script src="./src/index.js" type="module"></script>
+  </head>
+
+  <body>
+    <div class="finder">
+      <h1 class="title">IP Address Tracker</h1>
+
+      <form action="" class="search-bar" autocomplete="off">
+        <input
+          type="text"
+          name="input-ip"
+          class="search-bar__input"
+          placeholder="Search for any IP address or domain"
+        />
+        <button class="search-bar__btn"></button>
+      </form>
+
+      <div class="info">
+        <div class="info__block">
+          <div class="info__block_subtitle">ip address</div>
+          <div class="info__block_title" id="ip">212.232.232.231</div>
+        </div>
+
+        <div class="info__block">
+          <div class="info__block_subtitle">location</div>
+          <div class="info__block_title" id="location">Brooklyn, NY 342343</div>
+        </div>
+
+        <div class="info__block">
+          <div class="info__block_subtitle">timezone</div>
+          <div class="info__block_title">
+            UTC
+            <!-- add offset value dynamically using the API -->
+            <span id="timezone"></span>
+          </div>
+        </div>
+
+        <div class="info__block">
+          <div class="info__block_subtitle">isp</div>
+          <div class="info__block_title" id="isp">Lorem</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="map"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"
+        target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/Sampleq" target="_blank">
+        <i>Sampleq</i>
+      </a>
+      Igor M.
+
+      <div>
+        Source code:
+        <a
+          href="https://github.com/Sampleq/job-listings-filtering-app-ts-react-redux"
+          target="_blank"
+        >
+          GitHub Repo
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
