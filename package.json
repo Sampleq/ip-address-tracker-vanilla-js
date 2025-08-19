@@ -4,8 +4,8 @@
   "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html --out-dir=build --public-url ./"
+    "start": "parcel src/index.html --open",
+    "build": "parcel build src/index.html --out-dir=build --public-url ./"
   },
   "keywords": [],
   "author": "",

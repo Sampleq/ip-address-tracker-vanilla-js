@@ -1,4 +1,4 @@
-const API_KEY = 'at_xWJGPVImYn4geWbpy0znswUaVLb3I';
+const API_KEY = 'at_xWJGPVImYn4geWbpy0znswUaVLb3I'; // due demo apikey stored explicity
 
 async function getAddress(ip = '152.12.22.1') {
   const response = await fetch(
