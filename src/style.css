@@ -74,6 +74,7 @@ html {
     cursor: pointer;
     background: url('../images/icon-arrow.svg') no-repeat 50% 50%;
     background-color: black;
+    color: transparent;
 }
 
 .search-bar__btn:hover {

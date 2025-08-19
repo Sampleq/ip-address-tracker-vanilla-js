@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "![Design preview for the IP address tracker coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "parcel src/index.html --open",
     "build": "parcel build src/index.html --out-dir=build --public-url ./"
